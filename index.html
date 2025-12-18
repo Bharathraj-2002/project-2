@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfilio-_💫Raj</title>
+    <link rel="icon" href="./bemoj.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+    <style>
+        * {
+            position: relative;
+        }
+
+        section {
+            overflow-inline: hidden;
+        }
+
+        .navbar {
+            background-color: rgb(245, 241, 241);
+        }
+
+        .nav-link {
+            color: black;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .navbar-brand {
+            font-size: 1, 25rem;
+            font-weight: 800;
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .main {
+            background: url(./bharath\ photo.jpg)no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main h3 {
+            font-size: 4.4rem;
+            font-weight: px;
+            color: white;
+            text-shadow: 0 0 3px #be3939;
+        }
+
+        .main h6 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            line-height: 1;
+            border-bottom: 3px solid rgb(233, 20, 109);
+            width: 24%;
+            color: aliceblue;
+            font-weight: 500;
+        }
+
+        .main .btn1 {
+            height: 55px;
+            width: 138px;
+            background-color: rgb(233, 20, 109);
+            color: white;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+
+        }
+
+
+
+        .main .btn2 {
+            height: 55px;
+            width: 138px;
+            background-color: transparent;
+            color: rgb(233, 20, 109);
+            border: 1px solid rgb(233, 20, 109);
+            font-weight: bold;
+            border-radius: 5px;
+
+        }
+
+        .main .btn2:hover {
+            background-color: rgb(233, 20, 109);
+            transition: 0.5s;
+            color: white;
+        }
+
+        .about img {
+            box-shadow: 10px 25px 233px -20px rgba(0, 0, 0, 0.74);
+            -webkit-box-shadow: 10px 25px 233px -20px rgba(0, 0, 0, 0.74);
+            -moz-box-shadow: 10px 25px 233px -20px rgba(0, 0, 0, 0.74);
+        }
+
+        h1 {
+            font-size: 3 rem;
+            font-weight: 900;
+        }
+
+
+
+        .btn1 {
+            height: 45px;
+            width: 154px;
+            outline: none;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .btn1:hover {
+            background: transparent;
+            color: black;
+            border: 1PX solid black;
+            transition: 0.5s;
+        }
+
+        .b1 {
+            font-weight: 900;
+        }
+
+        .btn2 {
+            height: 45px;
+            width: 154px;
+            outline: none;
+            border: 1px solid black;
+            background-color: transparent;
+            color: black;
+            border-radius: 4px;
+        }
+
+        .btn2:hover {
+            background: black;
+            color: white;
+            border: 1PX solid black;
+            transition: 0.5s;
+        }
+
+        .card {
+            border: none;
+            border: none;
+            box-shadow: -21px 1px 125px -49px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -21px 1px 125px -49px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -21px 1px 125px -49px rgba(0, 0, 0, 0.75);
+        }
+
+        .card p {
+            color: gray;
+
+        }
+
+        .circle {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(177, 162, 162);
+            color: black;
+            padding: 12px;
+            font-size: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .card:hover .circle {
+            background-color: black;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .control ul li {
+            list-style: none;
+            background-color: black;
+            padding: 5px 15px;
+            color: white;
+            display: inline-block;
+            cursor: pointer;
+            letter-spacing: 2;
+        }
+
+        .iteam {
+            position: relative;
+        }
+
+        .iteam:hover {
+            box-shadow: 4px -5px 75px -6px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 4px -5px 75px -6px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 4px -5px 75px -6px rgba(0, 0, 0, 0.75);
+            transition: 0.5s;
+        }
+
+        .iteam span {
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            font-size: 40px;
+            color: black;
+            cursor: pointer;
+            opacity: 0;
+        }
+
+        .iteam:hover span {
+            opacity: 1;
+        }
+
+        .cardb1:hover {
+            box-shadow: 10px 10px 121px -37px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 121px -37px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 121px -37px rgba(0, 0, 0, 0.75);
+            transition: 0.5s;
+        }
+
+        .circle:hover {
+            background-color: black;
+            transition: 0.4s;
+            color: white;
+        }
+
+        footer {
+            background-color: rgb(36, 34, 34);
+            color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="home">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg fixed-top text-uppercase ">
+                <div class="container">
+                    <a class="navbar-brand font-weight-bold" href="#"><i class="bi bi-strava"></i>BHARATH RAJ</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-link  px-lg-4 rounded" href="#home">Home</a>
+                            <a class="nav-link  px-lg-4 rounded" href="#about">About Me</a>
+                            <a class="nav-link  px-lg-4 rounded" href="#skills">Skills</a>
+                            <a class="nav-link  px-lg-4 rounded" href="#Project">Project</a>
+                            <a class="nav-link  px-lg-4 rounded" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+
+
+    <section class="main py-5">
+        <div data-aos="flip-down">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <div class="clg-lg-6 py-5">
+                        <h3><small>HELLO I Am</small><br>
+                            Bharath Raj
+                            <h6>FULL-STACK DEVELOPER</h6>
+                            <input type="button" value="MY WORK" class="btn1 mt-5">
+                            <input type="button" value="HORE ME " class="btn2 mt-5">
+
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="about">
+        <div data-aos="fade-left">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <br>
+                        <img src="./bharath2.jpg" class="img-fluid mt-1" style="height: 80%;">
+                    </div>
+                    <div class="col-lg-7">
+                        <br>
+                        <br>
+                        <h1 class="py-1">About Me.</h1>
+                        <p class="py-2 font-weight-bold">FRONT END DEVELOPER</p>
+                        <p class="py-2">I am <span class="b1">Bharat Raj</span> Lorem Ipsum is simply dummy
+                            text of the
+                            printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard dummy text ever It has survived not only five
+                            centuries,
+                            but also the leap into electronic but also the leap into electronic typesetting, remaining
+                            essentially unchanged. It was popularised in the 2025s with the release of Letraset
+                            sheets containing</p>
+
+
+                        <br>
+                        <a href="./bharath photo.jpg" download="" class=" btn btn-outline-dark btn-lg">DOWNLOAD CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <section class="services py-5 bg-light">
+            <div class="container py-5">
+                <h1 class="text-center pb-5">Skills</h1>
+                <div data-aos="fade-up-right">
+
+                    <div class="row pb-3">
+                        <div class="col-lg-3 mb-3">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <div class="circle">
+                                        <i class="bi bi-filetype-html"></i>
+                                    </div>
+                                    <h4 class="font-weight-bold">HTML</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <div class="circle">
+                                        <i class="bi bi-css"></i>
+                                    </div>
+                                    <h4 class="font-weight-bold">CSS</h4>
+                                    <p>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <div class="circle">
+                                        <i class="bi bi-bootstrap-fill"></i>
+                                    </div>
+                                    <h4 class="font-weight-bold">BOOTSTRAP</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <div class="circle">
+                                        <i class="bi bi-filetype-js"></i>
+                                    </div>
+                                    <h4 class="font-weight-bold">JAVASCRIPTE </h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up-left">
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-3">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <div class="circle">
+                                        <i class="bi bi-filetype-py"></i>
+                                    </div>
+                                    <h4 class="font-weight-bold">
+                                        PYTHON
+                                    </h4>
+                                    <p> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <div class="circle">
+                                        <i class="bi bi-amd"></i>
+                                    </div>
+                                    <h4 class="font-weight-bold"> D JANGO</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <div class="circle">
+                                        <i class="bi bi-filetype-sql"></i>
+                                    </div>
+                                    <h4 class="font-weight-bold">MY sql</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <div class="card text-center py-3">
+                                <div class="card-body">
+                                    <div class="circle">
+                                        <i class="bi bi-github"></i>
+                                    </div>
+                                    <h4 class="font-weight-bold">VERSION CONTRAL</h4>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section id="Project">
+        <div data-aos="zoom-in-up">
+            <div class="container">
+                <div class="row">
+                    <h1 class="text-center pb-5">Project.</h1>
+                    <div class="cardb1 mx-5 col-3 p-1" style="width: 19rem;">
+                        <img src="blog1.jpg" class="card-img-top" alt="..." style="height:215px;">
+                        <div class="card-body">
+                            <h5 class="">ONLINE FURNITURE</h5>
+                            <p class="card-text">The query "online furniture some point daniels" is unclear. It seems to
+                                be
+                                a request for information about online furniture retailers, potentially with a specific
+                                brand or location in mind.</p><br>
+                            <br>
+                            <a href="http://127.0.0.1:5500/tv.html" class="btn btn-outline-dark ">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="cardb1 mx-4 col-3 p-1" style="width: 19rem;">
+                        <img src="blog2.jpg" class="card-img-top" alt="..." style="height:215px;">
+                        <div class="card-body">
+                            <h5 class="">ZOMATO OF FOUNDERS</h5>
+                            <p class="card-text">Zomato is an Indian multinational restaurant aggregator and food
+                                delivery
+                                company Zomato connects customers with a vast network of restaurants, providing users
+                                with
+                                options to discover, order, and enjoy meals at their convenience. </p>
+                            <a href="http://127.0.0.1:5500/task.html" class="btn btn-outline-dark">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="cardb1 mx-4  col-3 p-1" style="width: 19rem;">
+                        <img src="blog3.jpeg" class="card-img-top" alt="..." style="height:215px;">
+                        <div class="card-body">
+                            <h5 class="">BMW-WEBPAGE</h5>
+                            <p class="card-text">BMW, or Bayerische Motoren Werke, is a German multinational corporation
+                                that produces luxury vehicles and motorcycles. BMW has a rich history
+                                rooted in aircraft engine manufacturing and has since become a leading brand in the
+                                automotive industry.</p>
+                            <a href="http://127.0.0.1:5500/css_class3.html" class="btn btn-outline-dark">View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <section class="contact py-5">
+            <div class="container py-5">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+
+                    <h1 class="text-center pb-5">Contact </h1>
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <div class="row text-center">
+                                <div class="col-lg-4">
+                                    <div class="circle">
+                                        <a
+                                            href="https://www.google.com/maps/place/Titan+World+-+Thirupapuliyur,+Cuddalore/@11.7524704,79.7265664,13z/data=!4m15!1m8!3m7!1s0x3a549888444e5d9d:0x6aa2c2d991f57236!2sCuddalore,+Tamil+Nadu!3b1!8m2!3d11.7480419!4d79.7713687!16zL20vMDRmd2o2!3m5!1s0x3a54998be5f4e097:0xbfda82900795721c!8m2!3d11.7421524!4d79.7595148!16s%2Fg%2F11s90n75vv?entry=ttu&g_ep=EgoyMDI1MDgxMi4wIKXMDSoASAFQAw%3D%3D">
+                                            <i class="bi bi-house-check-fill" style="height: 150px;">
+
+
+                                            </i></a>
+                                    </div>
+
+
+                                    <h5>Address</h5>
+
+                                    <!-- <p>Sethiyathope,Cuddalore(Dt)-608702</p> -->
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="circle">
+                                        <a href="https://mail.google.com/mail/u/0/#inbox">
+                                            <i class="bi bi-envelope-paper-heart-fill">
+
+                                            </i>
+                                        </a>
+
+                                    </div>
+                                    <h5>Email</h5>
+                                    <!-- <p>bharathraj200207@gmail.com</p> -->
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="circle">
+                                        <a href=" tel:9344169652">
+                                            <i class="bi bi-person-lines-fill">
+                                            </i>
+                                        </a>
+
+                                    </div>
+                                    <h5>Contact</h5>
+                                    <!-- <p>9344169652</p> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><br>
+
+                    <div class="row">
+                        <div class="col-lg-5 mx-auto">
+                            <input type="text" class="form-control bg-light mb-3" placeholder="Name"
+                                aria-label="First name" style="width:80%;">
+                        </div>
+                        <div class="col-lg-5 ">
+                            <input type="text" class="form-control bg-light mb-3" placeholder="Email"
+                                aria-label="Last name" style="width: 80%;">
+                        </div><br>
+                        <br>
+                        <br>
+                        <div class="form-floating py-1 ">
+                            <textarea class="form-control bg-light font-weight-bold" placeholder="Leave a comment here"
+                                id="floatingTextarea2" style="height: 200px;"></textarea>
+                            <label for="floatingTextarea2"> Message</label>
+                            <center>
+                                <input type="button" class="btn1 mt-2" value="SUBMIT">
+                            </center>
+                        </div>
+                    </div>
+        </section>
+    </section>
+    <footer class="py-2 text-center">
+        <p>Copy Right 2025 @ By PowerWeb All Right,s Recived</p>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+        once: true,
+        offset: 350,
+    });
+</script>
+
+
+
+</html>
